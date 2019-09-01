@@ -235,9 +235,8 @@ int main()
 { 
 int t,n;
   cin>>t;        //for no of test cases
-  cin>>n;      //for no of lines
   for(int i=0; i<t;i++)
-  {   
+  {    cin>>n;      //for no of lines
       for(int j=0;j<n;j++)
       {  
           string s;        //c for storing right side expression
