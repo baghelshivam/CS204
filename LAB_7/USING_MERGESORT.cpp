@@ -17,6 +17,17 @@ bool compare(string a,string b)
     
     return true;
 }
+void mergeSort(vector<string> &arr, int l, int r) 
+{ 
+    if (l< r) 
+    { 
+        int m=l+(r-l)/2; 
+        mergeSort(arr,l,m); 
+        mergeSort(arr,m+1,r); 
+        merge(arr, l, m, r); 
+    } 
+} 
+
 void merge(vector<string> &arr, int l, int m, int r) //for merging
 { 
     int i, j, k; 
@@ -58,16 +69,7 @@ void merge(vector<string> &arr, int l, int m, int r) //for merging
     } 
 } 
   
-void mergeSort(vector<string> &arr, int l, int r) 
-{ 
-    if (l< r) 
-    { 
-        int m=l+(r-l)/2; 
-        mergeSort(arr,l,m); 
-        mergeSort(arr,m+1,r); 
-        merge(arr, l, m, r); 
-    } 
-} 
+
 
 int main()
 {
