@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <bits/stdc++.h>//change
+
 using namespace std;
 map<string,int> v;   //globally declearing map
 struct tree 
